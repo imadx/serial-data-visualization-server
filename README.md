@@ -22,7 +22,8 @@ This is still in beta. Currently a single numeric reading (e.g. `834.74`) separa
 
 Check the `settings/config.js` for available configurations.
 
-`module.exports = {
+```javascript
+module.exports = {
     port: "8080",
     COM_PORT: undefined, // e.g. "COM1"
     COM_baudRate: 9600,
@@ -30,6 +31,7 @@ Check the `settings/config.js` for available configurations.
     dashboardEndpoint: "/",
 
     log_data_exchanged_on_console: false,
-}`
+}
+```
 
 At runtime, when the browser is pointed to the dashboard page, which defaults to `http://localhost:8080`, set `enable_log_data_to_console=true;` in console (Debugger Tools) to enable data output on the console.
