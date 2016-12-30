@@ -1,0 +1,111 @@
+html, body{
+	font-family: 'Segoe UI', 'Helvetica', 'Roboto';
+	background: #ededed;
+}
+#console{
+	font-size: smaller;
+}
+h1{
+	font-weight: lighter;
+}
+h1 small{
+	font-size: 14pt;
+	opacity: 0.5;
+}
+h5{
+	font-weight: normal;
+}
+h5.link{
+	font-size: 12pt;
+}
+a, a:link{
+	color: #7d52c6;
+}
+a:hover, a:active, a:visited{
+	color: #965afc;
+}
+.wrapper{
+	margin: 10pt 20pt;
+	padding: 10pt 20pt;
+	border-radius: 3px;
+}
+.wrapper.header{
+	display: flex;
+	align-items: center;
+
+}
+.white-bg{
+	background: #fff;
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,0.2);
+	padding: 30pt 20pt;
+}
+.white-bg h5{
+	margin-bottom: 20pt;
+}
+#myChart{
+	/*max-height: 40vh !important;*/
+	height: 50vh !important;
+}
+.data-row{
+	margin-bottom: 5pt;
+	font-size: smaller;
+	display: flex;
+	align-items: center;
+}
+.data-row .info{
+	font-size: smaller;
+	text-transform: uppercase;
+	min-width: 80pt;
+	margin-right: 20pt;
+	display: inline-block;
+	opacity: 0.5;
+	text-align: right;
+}
+.data-console{
+	max-height: 80vh;
+	overflow-y: auto;	
+}
+.data-console .data-row .info{
+	font-size: small;
+}
+.data-row .value{
+	font-size: small;
+}
+.device-information{
+	overflow: auto;
+}
+div.footer{
+	padding-top: 10pt;
+	padding-bottom: 20pt;
+	padding-left: 30pt;
+	opacity: 0.3;
+
+}
+.btn-outline-primary{
+	color: #7d52c6;
+	border-color: #7d52c6;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary.focus, .btn-outline-primary:focus
+{
+	color: #fff;
+    background-color: #7d52c6;
+    border-color: #7d52c6;
+}
+@media (min-width: 768px){
+	.data-console{
+		margin-left:0;
+	}
+	.device-information{
+		margin-right: 0;
+	}
+}
+@media (max-width: 767px){
+	.wrapper.header{
+		display: block !important;
+	}
+	.wrapper.header .btn.btn-outline-primary{
+		margin-top: 10pt;
+		width: 100%;
+	}
+}

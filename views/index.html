@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Serial Data Visualization Server</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="wrapper header">
+				<hgroup class="col-md-9">
+					<h1>Serial Data Visualization Server <small>v 0.0.1</small></h1>
+					<h5 class="link"><a href="https://github.com/imadx/serial-data-visualization-server"><i class="fa fa-github-alt" aria-hidden="true"></i>  https://github.com/imadx/serial-data-visualization-server</a></h5>
+				</hgroup>
+				<div class="col-md-3 text-md-right text-lg-right">
+					<button id="btn_pause" class="btn btn-outline-primary"><i class="fa fa-pause" aria-hidden="true"></i> Pause Chart Updates</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="white-bg wrapper">
+					<canvas id="myChart" width="800" height="400"></canvas>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-3">
+				<div class="white-bg wrapper device-information">
+					<h5>Device Information</h5>
+					<div class="data-row"><span class="info">COM Name</span>   <span id="d_comName" class="value">(not set)</span></div>
+					<div class="data-row"><span class="info">Location ID</span>  <span id="d_locationId" class="value">(not set)</span>	</div>
+					<div class="data-row"><span class="info">Manufacturer</span> <span id="d_manufacturer" class="value">(not set)</span> 	</div>
+					<div class="data-row"><span class="info">pnp Id</span>   	<span id="d_pnpId" class="value">(not set)</span></div>
+					<div class="data-row"><span class="info">product Id</span>  <span id="d_productId" class="value">(not set)</span>	</div>
+					<div class="data-row"><span class="info">vendor Id</span>   <span id="d_vendorId" class="value">(not set)</span></div>
+					<div class="data-row"><span class="info">Baud Rate</span>   <span id="d_baudRate" class="value">(not set)</span></div>
+				</div>
+
+				<div class="footer">
+					<i class="fa fa fa-github-alt" aria-hidden="true"></i>  github.com/imadx
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-9">
+				<div class="white-bg wrapper data-console">
+					<h5>Data Console</h5>
+					<div id="console">
+						<div class="data-row"><span class="info">--:--</span>   	<span class="value">(no data received)</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

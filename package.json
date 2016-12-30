@@ -1,0 +1,33 @@
+{
+  "name": "serial-data-visualization-server",
+  "version": "1.0.0",
+  "description": "Serial Data Visualization Server Starter Kit for serial port related projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imadx/serial-data-visualization-server.git"
+  },
+  "keywords": [
+    "serial",
+    "usb",
+    "arduino",
+    "data",
+    "visualization",
+    "dashboard"
+  ],
+  "author": "Ishan Madhusanka",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imadx/serial-data-visualization-server/issues"
+  },
+  "homepage": "https://github.com/imadx/serial-data-visualization-server#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "serialport": "^4.0.7",
+    "socket.io": "^1.7.2"
+  }
+}
