@@ -1,5 +1,5 @@
 # Serial Data Visualization Server
-Serial Data Visualization Server Starter Kit for serial port related projects
+Use this Serial Data Visualization Server as a starter kit for your serial port related projects. Tested with Arduino data written to serial output, connected through USB.
 
 ## Getting Started
 1. Clone the repository ( Star this repository as well ;) )
